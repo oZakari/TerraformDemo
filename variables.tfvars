@@ -1,2 +1,0 @@
-managed_image_name = "__managed_image_name__"
-managed_image_resource_group_name = "__managed_image_resource_group_name__"
