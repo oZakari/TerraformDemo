@@ -17,6 +17,19 @@ az account set --subscription "SubscriptionName"
 
 ```
 
+## Create local.tfvars File in Same Directory
+Example of File Contents:
+
+```bash
+environment_prefix = "poc"
+region             = "southcentralus"
+vm_size            = "Standard_D2s_v5"
+computer_name      = "tfpoc"
+admin_username     = "devuser"
+admin_password     = "Terr@f0rm!@#"
+
+```
+
 ## Terraform Commands for Creating Resources
 
 ```bash
