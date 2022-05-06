@@ -23,8 +23,8 @@ variable "computer_name" {
 }
 
 variable "admin_username" {
-  description = "The username for the admin account used to access the virtual machine."
   default     = "adminusername"
+  description = "The username for the admin account used to access the virtual machine."
   type        = string
 }
 
