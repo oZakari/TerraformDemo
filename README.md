@@ -17,6 +17,23 @@ az account set --subscription "SubscriptionName"
 
 ```
 
+## Create a new Resource Group, Storage Account and a Blob Container in the subscription you are deploying the Terraform to
+Replace the values in the backend.tf file to match the newly created resources.
+
+Note: You do not need to manually create the file specified for the key value as that will be created automatically after running terraform init.
+
+```bash
+terraform {
+  backend "azurerm" {
+    resource_group_name  = "tfframework-states-rg"
+    storage_account_name = "terraformstateszt"
+    container_name       = "tfframework-states"
+    key                  = "terraform-demo.tfstate"
+  }
+}
+
+```
+
 ## Create local.tfvars File in Same Directory
 Example of File Contents:
 
