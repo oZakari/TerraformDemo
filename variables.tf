@@ -17,7 +17,7 @@ variable "vm_size" {
 }
 
 variable "computer_name" {
-  default     = "windows-server-poc"
+  default     = "windowsuser"
   description = "The host name of the computer."
   type        = string
 }
