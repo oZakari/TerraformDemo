@@ -55,7 +55,7 @@ jobs:
           ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}
           ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID }}
           ARM_SUBSCRIPTION_ID: ${{ secrets.ARM_SUBSCRIPTION_ID }}
-        run: terraform plan -var-file="local.tfvars" -var='admin_password=${{ secrets.ADMINPW }}' -out tfplan
+        run: terraform plan -var='admin_password=${{ secrets.ADMINPW }}' -out tfplan
         continue-on-error: true
 
       - name: Terraform Apply
